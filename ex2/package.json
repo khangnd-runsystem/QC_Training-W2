@@ -1,0 +1,17 @@
+{
+  "name": "node-input-example",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "@types/prompt-sync": "^4.2.3"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
