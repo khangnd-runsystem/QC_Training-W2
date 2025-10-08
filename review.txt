@@ -1,0 +1,29 @@
+- any: parse file Json nên sử dụng any vì chưa biết kiểu dữ liệu của nó.
+class Person {
+  constructor(public name: string, public age: number) {}
+}
+class Student extends Person {
+  constructor(name: string, age: number, public grade: number) {
+    super(name, age);
+  }
+}
+- super là constructor của class cha
+- class / interface: interface là hình dạng đối tượng, class có chứa logic, cả 2 đều kế thừa
+“Generics” trong TypeScript là gì?
+function identity<T>(value: T): T {
+  return value;
+}
+console.log(identity<string>("Hello"));
+- Đây là generic trong typescript
+- Khác biệt giữa let, const và var: chỉ có var có hoisting, nên ưu tiên sử dụng let thay vì var
+enum Role {
+  Admin = "ADMIN",
+  Editor = "EDITOR",
+  Viewer = "VIEWER"
+}
+let userRole: Role = Role.Admin;
+console.log(userRole);
+- Kết quả: ADMIN
+
+- flaky test: phụ thuộc vào hàm đợi
+- Luyện code tay:

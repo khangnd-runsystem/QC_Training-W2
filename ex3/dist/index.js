@@ -2,13 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const promptSync = require("prompt-sync");
 const prompt = promptSync();
-console.log('Hello, World!');
 let num = Number(prompt("Nhập số thứ nhất: "));
 while (isNaN(num)) {
     num = Number(prompt("Vui lòng nhập số hợp lệ: "));
 }
 function isPrime(num) {
-    if (Math.floor(Number(num)) !== Number(num)) {
+    if (Math.floor(num) !== num) {
         return false;
     }
     else {
